@@ -1,0 +1,5 @@
+<root>
+    <item name='java.net.URL java.lang.String getFile()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>
