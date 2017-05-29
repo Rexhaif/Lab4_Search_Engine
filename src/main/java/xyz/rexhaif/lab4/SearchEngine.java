@@ -158,10 +158,10 @@ public class SearchEngine {
             int min = idxs_sorted[0];
             int max = idxs_sorted[idxs_sorted.length - 1];
             if (min == max) {
-                min = min - (min % 10);
-                max = max + (((words.length() - 1) - max) % 10);
+                min = min - (min % 100);
+                max = max + (((words.length()) - max) % 10);
             }
-            for (int i = min - 1; i < (max + 2); ++i) {
+            for (int i = min; i < (max + 2); ++i) {
                 res.append(words.getString(i)).append(" ");
             }
             res.append(System.lineSeparator());
